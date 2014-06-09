@@ -15,7 +15,7 @@ describe Tree do
     end
 
     it '[three] N:4 A:3 D:2 result:6' do
-      instance.setup_value(weight: 3,volume: 3,proviso: 2)
+      instance.setup_value(weight: 4,volume: 3,proviso: 2)
       expect(instance.calculate).to eq(6)
     end
 
@@ -27,12 +27,11 @@ describe Tree do
   end
 
   describe 'create_tree method should give correct result' do
-    it '[one] N:3 A:3  result:4 ' do
-      instance.setup_value(weight: 2,volume: 2)
-      expect(instance.create_tree).to eq(4)
+    it '[one] N:2 A:2  result:4 ' do
+      instance.setup_value(weight: 4,volume: 3)
+      expect(instance.get_low_nodes).to eq(4)
     end
   end
-
 
 
 

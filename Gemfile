@@ -1,3 +1,6 @@
 source 'https://rubygems.org'
 #gem 'rack', '~>1.1'
-gem 'rspec', :require => 'spec'
+
+group :test do
+  gem 'rspec', :require => 'spec'
+end

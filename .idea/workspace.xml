@@ -23,19 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tree.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tree.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="9" selection-start="747" selection-end="747" vertical-scroll-proportion="0.35257733" vertical-offset="494" max-vertical-offset="1178">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="node_tree.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_tree.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="28" selection-start="467" selection-end="467" vertical-scroll-proportion="-11.692307" vertical-offset="228" max-vertical-offset="988">
+            <state line="26" column="20" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
@@ -44,7 +35,16 @@
       <file leaf-file-name="tree_rspec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/tree_rspec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="31" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1311">
+            <state line="30" column="46" selection-start="884" selection-end="884" vertical-scroll-proportion="-9.846154" vertical-offset="314" max-vertical-offset="1520">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tree.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tree.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="0" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.77690804" vertical-offset="648" max-vertical-offset="1311">
               <folding />
             </state>
           </provider>
@@ -62,7 +62,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="2" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="209">
+            <state line="3" column="8" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
               <folding />
             </state>
           </provider>
@@ -94,12 +94,12 @@
         <option value="$PROJECT_DIR$/validy.rb" />
         <option value="$PROJECT_DIR$/spec/testing/tree_rspec.rb" />
         <option value="$PROJECT_DIR$/.rspec" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/node.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
-        <option value="$PROJECT_DIR$/spec/tree_rspec.rb" />
-        <option value="$PROJECT_DIR$/tree.rb" />
         <option value="$PROJECT_DIR$/node_tree.rb" />
+        <option value="$PROJECT_DIR$/spec/tree_rspec.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/tree.rb" />
       </list>
     </option>
   </component>
@@ -344,13 +344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="209">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/rubies/ruby-1.9.3-p327-perf/lib/ruby/1.9.1/xmlrpc/parser.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="8" selection-start="298" selection-end="298" vertical-scroll-proportion="0.33268103" vertical-offset="134" max-vertical-offset="15542">
@@ -365,23 +358,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/tree_rspec.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="31" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1311">
+        <state line="3" column="8" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_tree.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="28" selection-start="467" selection-end="467" vertical-scroll-proportion="-11.692307" vertical-offset="228" max-vertical-offset="988">
+        <state line="26" column="20" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/tree_rspec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="46" selection-start="884" selection-end="884" vertical-scroll-proportion="-9.846154" vertical-offset="314" max-vertical-offset="1520">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tree.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="9" selection-start="747" selection-end="747" vertical-scroll-proportion="0.35257733" vertical-offset="494" max-vertical-offset="1178">
+        <state line="55" column="0" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.77690804" vertical-offset="648" max-vertical-offset="1311">
           <folding />
         </state>
       </provider>

@@ -1,5 +1,6 @@
 #encoding: utf-8
 require 'rubygems'
+require 'pry'
 require 'bundler/setup'
 
 class Tree
@@ -14,39 +15,45 @@ class Tree
   end
 
   def calculate
-
+    calculate_proviso_path
   end
 
-  def node_calculate(parent = nil, edge = 0)
-    current_node = if parent.nil?
-      NodeTree.new
-    else
-      NodeTree.new(parent, edge)
-    end
-    current_node.set_node(@volume)
-    node_weight = current_node.weight
-    if @weight >= node_weight
-      (current_node.nodes).map do |edge|
-        node_calculate(current_node, edge)
-      end
-    else
-      current_node.parent.weight
+
+  def calculate_proviso_path
+    create_tree.map do |node|
+      proviso_for(node) ? node.weight : nil
     end
   end
 
-  def node_calculate_ver
+  def proviso_for node
+    if node.nil?
+      false
+    else
+      node.edge >= @proviso ? true : proviso_for(node.parent)
+    end
+  end
+
+
+  def create_tree
     root_node = NodeTree.new
     root_node.set_node(@volume)
     calculate_nodes(root_node)
   end
 
-  def calculate_nodes(node)
-    if @weight > node.weight
-      node.add_level.map do |children_node|
-        calculate_nodes(children_node)
+
+  def calculate_nodes(node, sum_node=[])
+    if @weight >= node.weight
+      node.add_children.map do |children_node|
+        calculate_nodes(children_node, sum_node)
       end
+    else
+      puts "NODE #{node.parent.object_id} #{node.parent.edge}"
+      binding.pry
+      node.parent.edge
     end
   end
+
+
 
   # программа будет работать пока не будет командый выйти:
   #   exit, \q

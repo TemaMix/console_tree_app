@@ -26,10 +26,21 @@ describe Tree do
 
   end
 
-  describe 'node_calculate method should give correct result' do
-    it '[one] N:2 A:2  result:4 ' do
+  describe 'create_tree method should give correct result' do
+    it '[one] N:3 A:3  result:4 ' do
       instance.setup_value(weight: 2,volume: 2)
-      expect(instance.node_calculate).to eq(4)
+      expect(instance.create_tree).to eq(4)
+    end
+  end
+
+
+
+
+  describe 'calculate_proviso_path method should correct result' do
+
+    it '[one] N:3 A:3 D:2  result:4 ' do
+      instance.setup_value(weight: 3,volume: 3, proviso:2)
+      expect(instance.calculate_proviso_path).to eq(4)
     end
   end
 

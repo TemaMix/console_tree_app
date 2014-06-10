@@ -26,49 +26,5 @@ describe Tree do
 
   end
 
-  describe 'create_tree method should give correct result' do
-    it '[one] N:2 A:2  result:4 ' do
-      instance.setup_value(weight: 4,volume: 3)
-      expect(instance.get_low_nodes).to eq(4)
-    end
-  end
-
-
-
-  describe 'calculate_proviso_path method should correct result' do
-
-    it '[one] N:3 A:3 D:2  result:4 ' do
-      instance.setup_value(weight: 3,volume: 3, proviso:2)
-      expect(instance.calculate_proviso_path).to eq(4)
-    end
-  end
-
-  describe 'calculate method should exception' do
-
-    it 'when tree volume > 100' do
-      expect{ instance.setup_value(volume:101) }.to raise_error(Errors::TreePropertyBadValue)
-    end
-
-    it 'when tree proviso take value > tree volume' do
-      expect{ instance.setup_value(proviso:5,volume:4) }.to raise_error(Errors::TreePropertyBadValue)
-    end
-
-    describe 'when tree properties apply value < 1' do
-      [:weight, :proviso, :volume].each do  |property|
-        it "when tree #{property} apply value < 1" do
-          expect{ instance.setup_value(Hash[property, 0]) }.to raise_error(Errors::TreePropertyBadValue)
-        end
-      end
-    end
-
-    describe 'when tree properties apply float value' do
-       [:weight, :proviso, :volume].each do  |property|
-         it "when tree #{property} apply float value" do
-           expect{instance.setup_value(Hash[property,1.5]) }.to raise_error(Errors::TreePropertyBadValue)
-         end
-       end
-    end
-
-  end
 
 end

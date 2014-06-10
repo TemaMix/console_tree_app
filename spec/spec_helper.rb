@@ -1,6 +1,7 @@
 require 'rspec'
-require_relative '../node_tree'
-require_relative '../tree'
+require_relative '../app/node_tree'
+require_relative '../app/tree'
+require_relative '../app/valid_tree'
 
 
 RSpec.configure do |config|

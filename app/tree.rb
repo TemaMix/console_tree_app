@@ -3,15 +3,18 @@ require 'rubygems'
 require 'pry'
 require 'bundler/setup'
 
+#require './valid_tree'
 class Tree
   # n - суммарный вес ребер - weight
   # d - условие - proviso
   # a - величена дерева - volume
 
+
   attr_accessor :weight, :volume, :proviso
 
   def setup_value(opts)
-    @weight, @volume, @proviso = opts[:weight], opts[:volume], opts[:proviso]
+    opts_valid = ValidTree.new(opts).valid
+    @weight, @volume, @proviso =  opts_valid[:weight],  opts_valid[:volume],  opts_valid[:proviso]
   end
 
   def calculate
@@ -40,9 +43,6 @@ class Tree
     root_node = NodeTree.new
     root_node.set_node(@volume)
     all_nodes = calculate_nodes(root_node)
-    all_nodes.flatten.each do |node|
-      puts "#### #{node.object_id} w: #{node.weight} ch #{node.children[0].object_id}  ch_s: #{node.children.size} pt #{node.parent.object_id}"
-    end
     get_low all_nodes.flatten.uniq
   end
 
@@ -67,7 +67,9 @@ class Tree
   # программа будет работать пока не будет командый выйти:
   #   exit, \q
   def start
-
+    gets_weight
+    gets_volume
+    gets_proviso
   end
 
   private
